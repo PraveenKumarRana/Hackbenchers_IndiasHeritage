@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>India's Heritage</title>
+        <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/heritage-places-indian-cities-2/100/victoria-memorial-kolkata-heritage-architecture-structure-building-india-3c7fc4967dc879f4-512.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/campgroundIndex.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        
+    </head>
+    <body>
+    <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/"><b><i class="fas fa-home"></i> Home</b></a>
+                    </div>
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                            <% if(!currentUser){ %>
+                                <li style="padding-right: 10px;
+                                padding-left:  10px;"><a href="/login"> Login   <i class="fas fa-user"></i></a></li>
+                                <li style="padding-right: 10px;
+                                padding-left:  10px;"><a href="/register"> Sign Up  <i class="fas fa-user-plus"></i></a></li>
+                                <li style="padding-right: 0px;
+                                padding-left:  10px;"><a href="/about"> About   <i class="fas fa-user"></i></a></li>
+                            <% } else { %>
+                                <li class="herder-element-spacing"><a href="#"><i class="fas fa-user-circle"></i>  <%= currentUser.username %></a></li>
+                                <li class="herder-element-spacing"><a href="/logout">Logout <i class="fas fa-user-minus"></i></a></li>
+                                <li class="herder-element-spacing"><a class="btn btn-default" href="/about"> About   <i class="fas fa-user"></i></a></li>
+                            <% } %>
+                        </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+                </div> <!-- /.container -->
+              </nav>
+
+              <!-- navigation bar building end here -->
+
+    
+    <div class="container">
+        <% if(error && error.length>0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length>0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    

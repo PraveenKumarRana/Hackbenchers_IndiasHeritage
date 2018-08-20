@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>India's Heritage</title>
+        <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/heritage-places-indian-cities-2/100/victoria-memorial-kolkata-heritage-architecture-structure-building-india-3c7fc4967dc879f4-512.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/landing.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+    <body>
+    
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+    
+    <div id="landing-header">
+ 		<h1 id="indian-heritage"><i class="fab fa-pagelines"></i>  Welcome to India's Heritage!</h1>
+		<a href="/campgrounds" class="btn btn-lg btn-primary">Get Started <i class="fas fa-search"></i></a>
+    </div>
+    
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+<div style="height: 1cm"></div>
+<% include partials/footer %>
