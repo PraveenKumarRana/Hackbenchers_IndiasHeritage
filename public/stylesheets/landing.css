@@ -41,22 +41,22 @@ body {
   
 
   .slideshow li:nth-child(1) { 
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/58/Rishikesh_view_from_Lakshman_Jhula.jpg) 
+    background-image: url(http://www.pragyata.com/uploadedimages/dmodk9enzm26hscky0.jpg) 
   }
   .slideshow li:nth-child(2) { 
-    background-image: url(http://i.huffpost.com/gen/2873264/images/o-LOTUS-TEMPLE-facebook.jpg);
+    background-image: url(https://i2.wp.com/travelblog.expedia.co.in/wp-content/uploads/2015/12/Indian-dancers-in-saris.jpg?fit=4272%2C2848&ssl=1);
     animation-delay: 10s; 
   }
   .slideshow li:nth-child(3) { 
-    background-image: url(https://res-3.cloudinary.com/enchanting/et-web/2015/05/Enchanting-Travels-India-Tours-Darjeeling-Tea-Gardens.jpg);
+    background-image: url(http://www.theholidayindia.com/img/solo/Jammu-Best-season.jpg);
     animation-delay: 20s; 
   }
   .slideshow li:nth-child(4) { 
-    background-image: url(http://tripuratourism.gov.in/images/DSC00114.JPG);
+    background-image: url(http://www.visitindia.org.in/madhya%20pradesh/images/maheshwar.jpg);
     animation-delay: 30s; 
   }
   .slideshow li:nth-child(5) { 
-    background-image: url(https://theculturetrip.com/wp-content/uploads/2016/04/living-root-bridge.jpg);
+    background-image: url(http://www.jantakareporter.com/wp-content/uploads/2016/10/Taj_Mahal_2012.jpg);
     animation-delay: 40s; 
   }
 

@@ -1,0 +1,17 @@
+body, html{
+    height: 100%;
+}
+.footer-body{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top:100%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

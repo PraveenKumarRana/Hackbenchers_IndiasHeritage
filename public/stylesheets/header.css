@@ -1,0 +1,35 @@
+/* NAVIGATION BAR */
+.navbar{
+    min-height: 70px;
+    margin-bottom: 0px;
+    margin-left:-1px;
+    margin-right:-2px;
+    /* position: relative; */
+    background-color:#000000;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-custom{
+    z-index: 3;
+}
+
+.navbar-brand{
+    color: aliceblue;
+}
+
+.collapse .navbar-collapse .navbar-default{
+    height: 100%;
+}
+
+.nav-menu-item{
+    padding-right: 0px;
+    padding-left:  10px; 
+    color: white;
+}
+
+.navbar-default .navbar-form{
+    border-color: #000000;
+    border-radius: 0px;
+}
+

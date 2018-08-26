@@ -1,0 +1,92 @@
+/*  BODY AND HTML BACKGROUND */
+body, html{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#delete-form {
+    display: inline;
+}
+
+.page-background{
+    background-image: url()
+}
+
+
+
+.body-jumbotron{
+    background: url(http://www.1zoom.net/big2/466/263762-frederika.jpg?m=1);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0px;
+    height: 20%;
+    text-align: center;
+    color: white;
+}
+.jumbotron{
+    margin-top: 30px;
+    background-color: rgba(102,73,75,0.6);
+}
+
+.body-places{
+    background-color: white;
+    padding-top: 30px;
+}
+
+.thumbnail>img{
+    display: block;
+    max-width: 100%;
+}
+
+.thumbnail{
+    padding: 0px 0px 5px 0px;
+    border: none;
+    box-shadow: 0 16px 38px -12px rgba(0,0,0,0.56),
+                0 4px 25px 0px rgba(0,0,0,0.12),
+                0 8px 10px -5px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.footer-copyright{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-desc{
+    text-align: center;
+}
+
+/* ======================================================= */
+/* Show page */
+/* ======================================================= */
+/* google map */
+.googleMapDiv{
+    border-right: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+}
+
+/* Near by places decoration */
+.nearByPlaces{
+    margin: 20px , auto;
+    padding: 0px , auto;
+}
+
+.body-size{
+    margin-top: 75px;
+    height: 800px;
+}

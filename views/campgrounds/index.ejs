@@ -1,54 +1,42 @@
 <% include ../partials/header %> 
-
-<div class="body-jumbotron">
-        <div class="container">
-                <header class="jumbotron">
-                    <div class="container">
-                        <h1><i class="fab fa-pagelines"></i>  Welcome To India's Heritage!</h1>
-                        <p>You don,t stumble upon your heritage. It's there, just waiting to be explored and shared  - <i>Robble Robertson</i></p>
-                        <p>
-                           <a class="btn btn-primary btn-large" href="/campgrounds/new">Add New Place</a>
-                        </p>
-                    </div>
-                </header>
-        </div> 
-</div>
-
-<!-- search-bar -->
-
-<div class="body-places">
-    <div class="container"> 
-        <div class = "search-bar">
-            <div class="form-group">
-                <input class="form-control" type="text" name="user-query" placeholder="Search ...">
-            </div>
-            <div class="form-group">
-                <input class="btn btn-primary btn-lg" type="button" value="Search">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- body element -->
-
-<div class="body-places">
-    <div class="container">
-     <div class="row text-center" style="display:flex; flex-wrap: wrap;">
-        <% campgrounds.forEach(function(campground){ %>
-            <div class="col-md-3 col-sm-6">
-                    <div class="thumbnail">
-                        <img style="height:180px" src="<%= campground.image %>">
-                        <div class="caption">
-                            <h4><%= campground.name %></h4>
+<div class="container-fluid">
+    <div class="body-jumbotron">
+            <div class="container">
+                    <header class="jumbotron">
+                        <div class="container">
+                            <h1><i class="fab fa-pagelines"></i>  Welcome To India's Heritage!</h1>
+                            <p>You don,t stumble upon your heritage. It's there, just waiting to be explored and shared  - <i>Robble Robertson</i></p>
+                            <p>
+                            <a class="btn btn-primary btn-large" href="/campgrounds/new">Add New Place</a>
+                            </p>
                         </div>
-                        <p>
-                            <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
-                        </p>
-                    </div>
+                    </header>
+            </div> 
+    </div>
+
+    <!-- body element -->
+
+    <div class="body-places">
+        <div class="container">
+        <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+            <% campgrounds.forEach(function(campground){ %>
+                <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <img style="height:180px" src="<%= campground.image %>">
+                            <div class="caption">
+                                <h4><%= campground.name %></h4>
+                            </div>
+                            <p>
+                                <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                            </p>
+                        </div>
+                </div>
+                <% }); %>
             </div>
-            <% }); %>
         </div>
     </div>
 </div>
-
+<div class="background-animation">
+                    
+</div>
 <% include ../partials/footer %>
