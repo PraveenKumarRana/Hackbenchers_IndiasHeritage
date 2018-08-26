@@ -18,13 +18,13 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span style="color:white;" class="sr-only">Toggle navigation</span>
+                <span style="color:white;" class="icon-bar"></span>
+                <span style="color:white;" class="icon-bar"></span>
+                <span style="color:white;" class="icon-bar"></span>
             </button>
             <div class="navbar-header">
-                <a class="navbar-brand" href="/"><b><i class="fas fa-home"></i> Home</b></a>
+                <a style="color:white; padding-top: 18px; font-size: 25px; font-weight: 400;" class="navbar-brand" href="/"><b><i class="fas fa-home"></i> Home</b></a>
             </div>
             </div>
         
@@ -32,16 +32,15 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                     <% if(!currentUser){ %>
-                        <li class="nav-menu-item"><a href="/login"> Login   <i class="fas fa-user"></i></a></li>
-                        <li class="nav-menu-item"><a href="/register"> Sign Up  <i class="fas fa-user-plus"></i></a></li>
+                        <li class="nav-menu-item"><a style="color:white; padding-top: 25px;" href="/login"> Login   <i class="fas fa-user"></i></a></li>
+                        <li class="nav-menu-item"><a style="color:white; padding-top: 25px;" href="/register"> Sign Up  <i class="fas fa-user-plus"></i></a></li>
                     <% } else { %>
-                        <li class="header-element-spacing"><a href="#"><i class="fas fa-user-circle"></i>  <%= currentUser.username %></a></li>
-                        <li class="header-element-spacing"><a href="/logout">Logout <i class="fas fa-user-minus"></i></a></li>
+                        <li class="header-element-spacing"><a style="color:white; padding-top: 25px;" href="#"><i class="fas fa-user-circle"></i>  <%= currentUser.username %></a></li>
+                        <li class="header-element-spacing"><a style="color:white; padding-top: 25px;" href="/logout">Logout <i class="fas fa-user-minus"></i></a></li>
                     <% } %>
                 </ul>
             </div><!-- /.navbar-collapse -->
     </nav>
-
               <!-- navigation bar building end here -->
 
     
