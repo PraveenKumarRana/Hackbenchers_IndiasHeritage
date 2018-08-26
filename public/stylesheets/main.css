@@ -4,11 +4,16 @@
 /*  Body and background decoration */
 body,html{
     width: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 .defined-container{
     width: 100%;
+}
+
+/* input box */
+.form-control{
+    height: 45px;
 }
 /***********************************/
 
@@ -95,4 +100,10 @@ body,html{
 .nearByPlaces{
     margin: 20px , auto;
     padding: 0px , auto;
+}
+
+/* Page background height */
+.page-background{
+    height: 73%;
+    margin-top: 9.5%;
 }
